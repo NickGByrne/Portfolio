@@ -1,13 +1,10 @@
 @charset "UTF-8";
 /* CSS Document */
 
-nav{
-	outline: double;
-}
 
-.topMenu{
+
+nav{
 	font-family:courier;
-	color:black;
 }
 
 div.pageMenu {
@@ -24,10 +21,31 @@ div.pageMenu {
 	margin-right:1em;
 }
 .topMenu{
+	color:#F1F1F1;
+	background-color:#1F1F1F;
+	font-family:courier;
+}
+
+
+.article{
+	margin-left:10%;
+	margin-right:10%;
+	margin-top:10em;
+	margin-bottom:10em;
+	color:Black;
+}
+
+div.navMenu{
+	margin-top:1em;
+	margin-left:10%;
+	
 	
 }
-.navMenu{
-	margin-top:1em;
+
+.breadcrumb{
+	font-family:courier;
+	color:black;
+	font-size:2em;
 }
 
 .topSide{
@@ -39,26 +57,27 @@ div.pageMenu {
 	flex-direction:column;
 }
 
+
 .portfolioItem{
 	display: flex;
 	flex-direction:row;
 	justify-content:flex-start;
 	flex-wrap: wrap;
 	align-items: center;
-	outline:dashed;
+	outline:solid;
 }
 
 .itemDescription{
 	flex-grow: 2;
 	order:2;
-	outline:dotted;
+	outline:solid;
 }
 
 .itemPicture{
 	flex-grow: 1;
 	order: 1;
 	align-self:center;
-	outline:dotted;
+	outline:solid;
 }
 
 a.pageMenu{ 
@@ -78,6 +97,8 @@ img {
 p{ 
 	font-family:arial;
 	font-size:1em;
+	margin-left:10%;
+	margin-right:10%;
 }
 
 h1{
@@ -100,3 +121,48 @@ h4 {
 	font-family:courier;
 	font-size:1.25em;
 }
+
+@media (min-width:1000px){
+	
+	.article{
+		margin-left:50px;
+		width:800px;
+		margin-top:10em;
+		margin-bottom:20em;
+		color:Black;
+	}
+	
+	img{
+		max-height:1000px;
+		width:auto;
+	}
+	
+	p{
+		margin-left:3em;
+		width:800px;
+		
+	}
+}
+
+@media (max-width:700px){
+	
+	.article{
+		margin-left:5%;
+		margin-right:5%;
+		margin-top:2em;
+		margin-bottom:5em;
+		color:Black;
+	}
+	
+	.portfolioItem{
+	display: flex;
+	flex-direction:column;
+	justify-content:flex-start;
+	flex-wrap: wrap;
+	align-items: center;
+	outline:solid;
+}
+
+}
+
+/* https://www.w3schools.com/css/css3_mediaqueries.asp */
