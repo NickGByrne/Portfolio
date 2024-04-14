@@ -7,12 +7,7 @@ nav{
 	font-family:courier;
 }
 
-div.pageMenu {
-	margin-left:25%;
-	margin-top: 5%;
-	margin-bottom:5% ;
 
-}
 
 .section{
 	margin-top:10em;
@@ -20,10 +15,27 @@ div.pageMenu {
 	margin-left:1em;
 	margin-right:1em;
 }
+
 .topMenu{
 	color:#F1F1F1;
-	background-color:#1F1F1F;
+	background-color:black;
 	font-family:courier;
+	
+}
+.topLeftSide{
+
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+	align-items:flex-end;
+	align-content:stretch;
+}
+
+.topRightSide{
+	text-align:right;
+	flex-grow:1;
+	order:3;
 }
 
 
@@ -37,69 +49,37 @@ div.pageMenu {
 
 div.navMenu{
 	margin-top:1em;
-	margin-left:10%;
-	
-	
+	margin-left:10%;	
 }
 
 .breadcrumb{
 	font-family:courier;
+	background-color:black;
+	color:white;
+	font-size:1em;
+}
+
+nav a:hover {
+	background-color:cornflowerblue;
 	color:black;
-	font-size:2em;
 }
-
-.topSide{
-	text-align:right;
+nav a:active {
+	background-color:white;
+	color:red;
 }
-
-.portfolioList{
-	display:flex;
-	flex-direction:column;
-}
+/* https://www.w3schools.com/howto/howto_js_topnav.asp */
 
 
-.portfolioItem{
-	display: flex;
-	flex-direction:row;
-	justify-content:flex-start;
-	flex-wrap: wrap;
-	align-items: center;
-	outline:solid;
-}
-
-.itemDescription{
-	flex-grow: 2;
-	order:2;
-	outline:solid;
-}
-
-.itemPicture{
-	flex-grow: 1;
-	order: 1;
-	align-self:center;
-	outline:solid;
-}
 
 a.pageMenu{ 
 	font:bold;
-	color:black;
 	font-family:courier;
 	font-size:20px;
 	text-decoration:none;
+	color:white;
 	/* https://stackoverflow.com/questions/2041388/how-to-remove-the-underline-for-anchorslinks */
 }
 
-img { 
-	width:100%;
-	height:auto;
-}
-
-p{ 
-	font-family:arial;
-	font-size:1em;
-	margin-left:10%;
-	margin-right:10%;
-}
 
 h1{
 	font-family:courier;
@@ -122,47 +102,8 @@ h4 {
 	font-size:1.25em;
 }
 
-@media (min-width:1000px){
-	
-	.article{
-		margin-left:50px;
-		width:800px;
-		margin-top:10em;
-		margin-bottom:20em;
-		color:Black;
-	}
-	
-	img{
-		max-height:1000px;
-		width:auto;
-	}
-	
-	p{
-		margin-left:3em;
-		width:800px;
-		
-	}
-}
-
-@media (max-width:700px){
-	
-	.article{
-		margin-left:5%;
-		margin-right:5%;
-		margin-top:2em;
-		margin-bottom:5em;
-		color:Black;
-	}
-	
-	.portfolioItem{
-	display: flex;
-	flex-direction:column;
-	justify-content:flex-start;
-	flex-wrap: wrap;
-	align-items: center;
-	outline:solid;
-}
-
+p{ 
+	font-family:arial;
 }
 
 /* https://www.w3schools.com/css/css3_mediaqueries.asp */

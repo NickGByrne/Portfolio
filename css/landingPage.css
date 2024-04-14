@@ -1,0 +1,28 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.logoImage{
+	position:static;
+	top:10vh;
+	left:10vw;
+}
+
+.landingBody{
+	background-color:black;
+	color:white;
+	
+}
+
+body{
+	background-color:black;
+}
+
+div.pageMenu {
+	margin-left:25%;
+	margin-top: 5%;
+	margin-bottom:5%;
+}
+
+.topMenu{
+	
+}
