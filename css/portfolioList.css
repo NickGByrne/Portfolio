@@ -3,7 +3,7 @@
 
 
 
-img.listIMG{
+.listIMG{
 	width:300px;
 	height:200px;
 }
@@ -41,7 +41,7 @@ div.itemPicture{
 
 @media (max-width:700px){
 	
-	img.listItem{
+	.listIMG{
 		width:100%;
 		height:auto;
 	}
