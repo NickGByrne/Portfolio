@@ -3,9 +3,9 @@
 
 
 
-img.listItem{
-	width:300;
-	height:200;
+img.listIMG{
+	width:300px;
+	height:200px;
 }
 
 .portfolioList{
@@ -17,17 +17,16 @@ img.listItem{
 .portfolioItem{
 	display: flex;
 	flex-direction:row;
-	justify-content:flex-start;
-	flex-wrap: wrap;
+	justify-content:space-around;
+	/*flex-wrap: wrap;*/
 	align-items: center;
 	outline:solid;
 	max-width:1000px;
 }
 
 div.itemDescription{
-	flex-grow: 2;
+	flex-grow: 1;
 	order:2;
-	outline:solid;
 	max-width:700px;
 }
 
@@ -35,14 +34,15 @@ div.itemPicture{
 	flex-grow: 1;
 	order: 1;
 	align-self:center;
-	outline:solid;
+	outilne:solid;
+	outline-color:black;
 }
 
 
 @media (max-width:700px){
 	
 	img.listItem{
-		max-width:100%;
+		width:100%;
 		height:auto;
 	}
 	
@@ -60,8 +60,6 @@ div.itemPicture{
 	div.itemDescription{
 		flex-grow: 2;
 		order:2;
-		outline:solid;
-		outline-color:black;
 		max-width:700px;
 	}
 }

@@ -9,7 +9,18 @@ p{
 	font-size:1em;
 	margin-left:10%;
 	margin-right:10%;
+	line-height:3;
+	/* https://www.w3schools.com/cssref/pr_dim_line-height.php */
 }
+
+.article{
+	margin-left:10%;
+	margin-right:10%;
+	margin-top:10em;
+	margin-bottom:10em;
+	color:Black;
+}
+
 
 @media (min-width:1000px){
 	
