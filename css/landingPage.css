@@ -1,11 +1,45 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.logoImage{
-	position:static;
-	top:10vh;
-	left:10vw;
+@keyframes fadeOut {
+	from {opacity:100%;}
+	to{opacity:0%;
+	   transform:translate(0px,2000px);
+	}
 }
+
+@keyframes fadeIn {
+	from {opacity:0%;}
+	to {opacity:100%;}
+}
+
+
+.mainBody{
+	opacity:0%;
+	animation-name:fadeIn;
+	animation-delay:2s;
+	animation-duration:2s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+	/* lecture 11*/
+}
+
+.overlayImage{
+	position:absolute;
+	max-width:100%;
+	max-height:100%;
+	top:0px;
+	left:0px;
+	animation-name:fadeOut;
+	animation-delay:2s;
+	animation-duration:2s;
+	animation-timing-function: ease-out;
+	animation-fill-mode:forwards;
+	
+}
+/*https://www.w3schools.com/css/css_positioning.asp*/
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin */
+/*https://www.w3schools.com/cssref/css_pr_translate.php */
 
 .landingBody{
 	background-color:black;
@@ -26,3 +60,13 @@ div.pageMenu {
 .topMenu{
 	
 }
+a.pageMenu{ 
+	font:bold;
+	font-family:courier;
+	font-size:20px;
+	text-decoration:none;
+	color:white;
+	/* https://stackoverflow.com/questions/2041388/how-to-remove-the-underline-for-anchorslinks */
+}
+
+
