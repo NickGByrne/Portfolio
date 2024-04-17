@@ -33,7 +33,7 @@
 	animation-name:fadeOut;
 	animation-delay:2s;
 	animation-duration:2s;
-	animation-timing-function: ease-out;
+	animation-timing-function: ease-in-out;
 	animation-fill-mode:forwards;
 	
 }
@@ -51,22 +51,5 @@ body{
 	background-color:black;
 }
 
-div.pageMenu {
-	margin-left:25%;
-	margin-top: 5%;
-	margin-bottom:5%;
-}
-
-.topMenu{
-	
-}
-a.pageMenu{ 
-	font:bold;
-	font-family:courier;
-	font-size:20px;
-	text-decoration:none;
-	color:white;
-	/* https://stackoverflow.com/questions/2041388/how-to-remove-the-underline-for-anchorslinks */
-}
 
 

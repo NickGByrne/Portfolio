@@ -5,7 +5,7 @@ img {
 	max-height:auto;
 }
 
-p{ 
+p.text{ 
 	font-size:1em;
 	margin-left:10%;
 	margin-right:10%;
@@ -38,7 +38,7 @@ p{
 		width:auto;
 	}
 	
-	p{
+	p.text{
 		margin-left:3em;
 		width:800px;
 		

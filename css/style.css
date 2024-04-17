@@ -3,52 +3,8 @@
 
 
 
-nav{
-	font-family:courier;
-}
 
 
-
-.section{
-	margin-top:10em;
-	margin-bottom:5em;
-	margin-left:1em;
-	margin-right:1em;
-}
-
-.topMenu{
-	color:#F1F1F1;
-	background-color:black;
-	font-family:courier;
-	
-}
-.topLeftSide{
-
-	display:flex;
-	flex-direction:row;
-	justify-content:flex-start;
-	flex-wrap:nowrap;
-	align-items:flex-end;
-	align-content:stretch;
-}
-
-.topRightSide{
-	text-align:right;
-	flex-grow:1;
-	order:3;
-}
-
-div.navMenu{
-	margin-top:1em;
-	margin-left:10%;	
-}
-
-.breadcrumb{
-	font-family:courier;
-	background-color:black;
-	color:white;
-	font-size:1em;
-}
 
 nav a:hover {
 	background-color:cornflowerblue;
@@ -83,6 +39,124 @@ h4 {
 
 p{ 
 	font-family:arial;
+	font-size:1em;
+}
+
+nav{
+	font-family:courier;
+	margin-left:1em;
+	margin-right:1em;
+}
+
+
+
+div.pageMenu {
+	margin-left:25%;
+	margin-top: 5%;
+	margin-bottom:5%;
+
+}
+
+a.pageMenu{ 
+	font:bold;
+	font-family:courier;
+	font-size:20px;
+	text-decoration:none;
+	color:white;
+	background-color:black;
+
+
+	/* https://stackoverflow.com/questions/2041388/how-to-remove-the-underline-for-anchorslinks */
+}
+
+.section{
+	margin-top:10em;
+	margin-bottom:5em;
+	margin-left:1em;
+	margin-right:1em;
+}
+
+.topMenu{
+	color:#F1F1F1;
+	background-color:black;
+	font-family:courier;
+	
+}
+.topLeftSide{
+
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-start;
+	flex-wrap:nowrap;
+	align-items:flex-end;
+	align-content:stretch;
+}
+
+.topRightSide{
+	text-align:right;
+}
+
+div.navMenu{
+	margin-top:1em;
+	margin-left:10%;	
+}
+
+.breadcrumb{
+	font-family:courier;
+	background-color:black;
+	color:white;
+	font-size:1em;
+}
+
+a.footerBar{
+	color:white;
+	font-family:Arial;
+	font-size:14px;
+}
+
+.footerBar{
+	color:white;
+	font-family:Arial;
+	font-size:14px;
+	background-color:black;
+	display:flex;
+	flex-direction:row;
+	/*align-items:flex-start;*/
+	justify-content:space-between;
+	/*https://jonitrythall.com/flexbox-cheatsheet */
+
+}
+.footerItemLeft{
+	margin-left:3em;
+	margin-top:3em;
+	margin-bottom:5em;
+	flex-grow:1;
+	order:1;
+}
+.footerSpacer{
+	order:2;
+	flex-grow:2;
+}
+
+.footerItemRight{
+	margin-right:3em;
+	margin-left:3em;
+	margin-top:3em;
+	margin-bottom:5em;
+	flex-grow:1;
+	order:3;
+}
+
+@media(max-width:700px){
+	
+.footerBar{
+	background-color:black;
+	color:white;
+	font-family:Arial;
+	display:flex;
+	flex-direction:column;
+	align-items:flex-start;
+	}
 }
 
 /* https://www.w3schools.com/css/css3_mediaqueries.asp */
