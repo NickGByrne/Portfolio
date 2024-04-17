@@ -8,6 +8,10 @@ video{
 }
 /*https://www.w3schools.com/css/css_rwd_videos.asp*/
 
+iframe{
+	width:100%;
+	height:auto;
+}
 
 nav a:hover {
 	background-color:cornflowerblue;
@@ -166,7 +170,12 @@ a.footerBar{
 	video{
 	width:720px;
 	height:480px;
-}
+	}
+	
+	iframe{
+	width:560px;
+	height:315px;
+	}
 }
 
 /* https://www.w3schools.com/css/css3_mediaqueries.asp */
