@@ -161,5 +161,12 @@ a.footerBar{
 	align-items:flex-start;
 	}
 }
+@media(min-width:1000px){
+	
+	video{
+	width:720px;
+	height:480px;
+}
+}
 
 /* https://www.w3schools.com/css/css3_mediaqueries.asp */
