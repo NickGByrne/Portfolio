@@ -2,8 +2,11 @@
 /* CSS Document */
 
 
-
-
+video{
+	width:100%;
+	height:auto;
+}
+/*https://www.w3schools.com/css/css_rwd_videos.asp*/
 
 
 nav a:hover {
