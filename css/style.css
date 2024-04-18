@@ -100,7 +100,9 @@ a.pageMenu{
 }
 
 .topRightSide{
-	text-align:right;
+	display:flex;
+	justify-content:flex-end;
+	flex-wrap:wrap-reverse;
 }
 
 div.navMenu{
@@ -153,6 +155,9 @@ a.footerBar{
 	flex-grow:1;
 	order:3;
 }
+
+
+/* https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do08 */
 
 @media(max-width:700px){
 	
